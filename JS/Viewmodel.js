@@ -5,40 +5,42 @@ function Model() {
 	//Hardcoded list of locations
 	self.locations = [
 	{
-		name: "SKS Hospital",
-		lat: 11.670157,
-		lng: 78.143357,
-		venue_id: '9d1e8f8e5acaa35dfbd7eb85'
+		name: "Statue of Liberty",
+		lat: 40.68992717640107,
+		lng: -74.04469741780797,
+		icon: '',
+		venue_id: '42893400f964a52054231fe3'
 	},{
-		name: "Kiruba Hospital",
-		lat: 11.666987,
-		lng: 78.155714,
-		venue_id: '6722b252c11d2e49793b82c3'
+		name: "The White House",
+		lat: 38.89767437003112,
+		lng: -77.03602958173147,
+		venue_id: '3fd66200f964a520d6f01ee3'
+
 	},{
-		name: "St Mary Hospital",
-		lat: 11.663511,
-		lng: 78.144554,
-		venue_id: '67fc4d3f964a520da9gr1fe3'
+		name: "Disneyland Park",
+		lat: 33.81053563825492,
+		lng: -117.91897596728407,
+		venue_id: '40f86c00f964a520bd0a1fe3'
 	},{
-		name: "SPMM Hospital",
-		lat: 11.661240,
-		lng: 78.19201,
-		venue_id: '78d2b4592d86aa09978322c0'
+		name: "Presidential Trail",
+		lat: 43.87731746980997,
+		lng: -103.45632766436881,
+		venue_id: '4fb91b6ee4b0e2f7bc7bc307'
 	},{
-		name: "Dharan Hospital",
-		lat: 11.624919,
-		lng: 78.145683,
-		venue_id: '4f0f2da566gfgfd0de447b3b'
+		name: "Navy Pier",
+		lat: 41.89144796204029,
+		lng: -87.6086071019105,
+		venue_id: '45840abff964a520913f1fe3'
 	},{
-		name: "Sri Gokulam Speciality Hospital",
-		lat: 11.679071,
-		lng: 78.127401,
-		venue_id: 's240e4b0a9b8ghrgbc756c9d'
+		name: "The French Quarter",
+		lat: 29.95699746778187,
+		lng: -90.06561922445354,
+		venue_id: '4ad4c04ef964a520c0f320e3'
 	}
 	];
 
 	//Set the home location coordinates to initialize the map here
-	self.home = [11.664325,78.146011];
+	self.home = [38.897,-77.036];
 
 	//Create an empty array to store a list of map markers
 	self.markers = [];
@@ -55,8 +57,8 @@ function ViewModel() {
     var self = this;
 
     //Variables to hold Foursquare API tokens
-    var CLIENT_ID = "23ZBVKL12XL44XDMPUJZFHNY2ZHSQTNGCMOAFJ0HTHC1EG3S";
-    var CLIENT_SECRET = "E3PEPIVQ4TAE00V5CGRGB3PEO2CS5TMH4YM14EKJN4L5BALN";
+    var CLIENT_ID = "3R13COVEW5M0POCTKOZLGAHVBH352A34CN2YFUMZ353JUQ2R";
+    var CLIENT_SECRET = "BJV501L5JTBU0SMMEVFVFBQ2ELXNRQR1PH2CDBRBW4I3BNCT";
 
     //Set variable to track which map marker is currently selected
 	var markerBouncing = null;
